@@ -1,0 +1,16 @@
+﻿@page "/counter"
+
+<h1>Счетчик гулей</h1>
+
+<p>Гулей на данный момент: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Нажми если гуль</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
